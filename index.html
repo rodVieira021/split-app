@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Split App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Split the bill</h1>
+    </header>
+    <div class="container">
+      <section class="sec-1">
+        <form class="sec-1-form">
+          <label for="person">Add a person:</label>
+          <input type="text" name="person" class="participant" />
+          <button class="btn-add">ADD</button>
+        </form>
+        <ul class="sec-1-ul">
+          <li>Rodrigo</li>
+          <li>Ausra</li>
+          <li>Dominik</li>
+        </ul>
+      </section>
+      <section class="sec-2">
+        <h3>Final Spliting</h3>
+        <form class="sec-2-form">
+          <label for="total">Total amount:</label>
+          <input type="text" name="total" class="total" />
+          <button class="btn-split">SPLIT</button>
+        </form>
+        <ul class="sec-2-ul">
+          <li>Rodrigo: $150</li>
+          <li>Ausra: $150</li>
+          <li>Dominik: $150</li>
+        </ul>
+      </section>
+      <section class="sec-3">
+        <h4>Who pays the tip?</h4>
+        <button class="btn-draw">DRAW</button>
+        <p>Rodrigo pays: $195</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

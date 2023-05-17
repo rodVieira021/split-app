@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+/* Styles */
+
+body {
+  background-color: #1f2937;
+  color: #efefef;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 28px;
+  border: 1px solid white;
+  width: 1200px;
+  margin: 30px auto;
+  padding: 30px 0;
+}
+
+.header h1 {
+  font-weight: 400;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}
+
+section label {
+  font-size: 20px;
+}
+
+section input {
+  width: 150px;
+  height: 35px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+  opacity: 0.8;
+  padding: 9.5px 20px;
+}
+button:hover {
+  opacity: 1;
+}
+
+.btn-add {
+  background-color: #1774eb;
+}
+
+.btn-split {
+  background-color: #1dd2af;
+}
+
+.btn-draw {
+  background-color: #ff5252;
+  margin-bottom: 20px;
+}
+
+.sec-3 p {
+  font-size: 20px;
+}
+
+.sec-1,
+.sec-1 form,
+.sec-2,
+.sec-2 form {
+  padding-bottom: 20px;
+}
+
+.sec-2 h3,
+.sec-3 h4 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
