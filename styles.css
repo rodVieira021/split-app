@@ -6,30 +6,6 @@
   box-sizing: border-box;
 }
 
-/* .flex {
-  display: flex;
-}
-
-.jcc {
-  justify-content: center;
-}
-
-.aic {
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-}
-
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-} */
-
 /* Styles */
 
 body {
@@ -98,6 +74,8 @@ button:hover {
 .btn-draw {
   background-color: #ff5252;
   margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
 }
 
 .sec-3 p {
@@ -105,7 +83,7 @@ button:hover {
 }
 
 .sec-1,
-.sec-1 form,
+.sec-1 form
 .sec-2,
 .sec-2 form {
   padding-bottom: 20px;
@@ -115,4 +93,16 @@ button:hover {
 .sec-3 h4 {
   font-size: 30px;
   padding-bottom: 20px;
+}
+
+.sec-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-percent {
+  margin-bottom: 20px;
+  width: 80px;
 }
