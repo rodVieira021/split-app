@@ -10,12 +10,12 @@ const payTheTip = document.querySelector(".pay-the-tip");
 
 const participantArray = [];
 
+//Add participant
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   participantArray.push({
     name: participant.value,
-    pays: 0,
   });
 
   participant.value = "";
@@ -27,17 +27,16 @@ addBtn.addEventListener("click", (e) => {
   list.innerHTML = participantList.join("");
 });
 
-//share the amount by the lenght of the array and add to each one
-
+//share the amount by the lenght of the array
 splitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  // split.value = "";
+
   listPay.innerHTML = `<li>Each person should pay: ${
     split.value / participantArray.length
-  }</li>`;
+  } eu</li>`;
 });
-//get the random object
 
+//draw the person that pays the tip and add to the individual shared amount
 drawBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -49,10 +48,9 @@ drawBtn.addEventListener("click", (e) => {
 
   let totalValue = (split.value * tipPercent.value) / 100;
 
-  payTheTip.innerHTML = `<p>Congratulations ${
-    ramdonObject.name
-  } you pay the tip today</p><br>
+  payTheTip.innerHTML = `<p>${ramdonObject.name.toUpperCase()} You pay the tip today!!!</p><br>
     <p>You should pay: ${
       totalValue + split.value / participantArray.length
-    }</p>`;
+    } eu</p>`;
+  tipPercent.value = "";
 });

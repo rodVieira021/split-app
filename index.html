@@ -12,29 +12,41 @@
       <h1>Split the bill</h1>
     </header>
     <div class="container">
-      <section class="sec-1">
-        <form class="sec-1-form">
-          <label for="person">Add a person:</label>
-          <input type="text" name="person" class="participant" />
-          <button class="btn-add">ADD</button>
-        </form>
-        <ul class="sec-1-ul"></ul>
-      </section>
-      <section class="sec-2">
-        <h3>Final Spliting</h3>
-        <form class="sec-2-form">
-          <label for="total">Total amount:</label>
-          <input type="text" name="total" class="total" />
-          <button class="btn-split">SPLIT</button>
-        </form>
-        <ul class="sec-2-ul"></ul>
-      </section>
+      <div class="div-sec">
+        <section class="sec-1">
+          <h3>Add a person:</h3>
+          <form class="sec-1-form">
+            <label for="person"></label>
+            <input type="text" name="person" class="participant" />
+            <button class="btn-add">ADD</button>
+          </form>
+          <ul class="sec-1-ul">
+            <li>Rodrigo</li>
+          </ul>
+        </section>
+
+        <section class="sec-2">
+          <h3>Total amount:</h3>
+          <form class="sec-2-form">
+            <label for="total"></label>
+            <input type="text" name="total" class="total" />
+            <button class="btn-split">SPLIT</button>
+          </form>
+          <ul class="sec-2-ul">
+            <li>Each person should pay: 50 eu</li>
+          </ul>
+        </section>
+      </div>
       <section class="sec-3">
         <h4>Who pays the tip?</h4>
-        <label for='tip'>Tip % </label>
-        <input type='number' name='tip' class='tip-percent'/>
+        <label for="tip">Tip % </label>
+        <input type="number" name="tip" class="tip-percent" />
         <button class="btn-draw">DRAW</button>
-        <div class='pay-the-tip'></div>
+        <div class="pay-the-tip">
+          <p>RODRIGO You pay the tip today!!!</p>
+          <br />
+          <p>You should pay: 60 eu</p>
+        </div>
       </section>
     </div>
     <script src="script.js"></script>
