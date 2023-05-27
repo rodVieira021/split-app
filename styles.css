@@ -9,33 +9,45 @@
 /* Styles */
 
 body {
-  background-color: #1f2937;
-  color: #efefef;
+  background-color: #efefee;
+  color: #2a2a2a;
   font-family: "Poppins", sans-serif;
 }
 
 .header {
   text-align: center;
-  font-size: 28px;
-  border: 1px solid white;
-  width: 1200px;
-  margin: 30px auto;
-  padding: 30px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px 10px 0 0;
+  background-image: url("./imgs/bills.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
 }
 
 .header h1 {
   font-weight: 400;
+  font-size: 70px;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fff;
   text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0 0 10px 10px;
 }
 
 ul {
   display: inline-block;
   text-align: left;
+  font-size: 20px;
 }
 
 li {
@@ -47,8 +59,8 @@ section label {
 }
 
 section input {
-  width: 150px;
-  height: 35px;
+  width: 200px;
+  height: 45px;
 }
 
 button {
@@ -57,7 +69,8 @@ button {
   color: #fff;
   transition: 0.3s;
   opacity: 0.8;
-  padding: 9.5px 20px;
+  width: 120px;
+  height: 45px;
 }
 button:hover {
   opacity: 1;
@@ -74,10 +87,9 @@ button:hover {
 .btn-draw {
   background-color: #ff5252;
   margin-bottom: 20px;
-  width: 150px;
+  width: 200px;
   height: 50px;
 }
-
 
 .sec-3 p {
   font-size: 20px;
@@ -91,9 +103,9 @@ button:hover {
 
 .div-sec,
 .sec-3 {
-  border: 1px solid #efefef;
   padding: 30px 0;
-  margin: 5px;
+  background-color: #fff;
+  padding: 30px 0;
 }
 .sec-1,
 .sec-1 form,
@@ -107,6 +119,7 @@ button:hover {
 .sec-3 h4 {
   font-size: 30px;
   padding-bottom: 20px;
+  font-weight: 400;
 }
 
 .sec-3 {
@@ -120,3 +133,12 @@ button:hover {
   margin-bottom: 20px;
   width: 80px;
 }
+
+.person-name,
+.to-pay,
+.each-pay {
+  color: red;
+  font-size: 24px;
+}
+
+/* MEDIAS */

@@ -31,9 +31,9 @@ addBtn.addEventListener("click", (e) => {
 splitBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  listPay.innerHTML = `<li>Each person should pay: ${
+  listPay.innerHTML = `<li>Each person should pay: <span class="each-pay">${
     split.value / participantArray.length
-  } eu</li>`;
+  } eu</span></li>`;
 });
 
 //draw the person that pays the tip and add to the individual shared amount
@@ -48,9 +48,9 @@ drawBtn.addEventListener("click", (e) => {
 
   let totalValue = (split.value * tipPercent.value) / 100;
 
-  payTheTip.innerHTML = `<p>${ramdonObject.name.toUpperCase()} You pay the tip today!!!</p><br>
-    <p>You should pay: ${
+  payTheTip.innerHTML = `<p><span class="person-name">${ramdonObject.name.toUpperCase()}</span> You pay the tip today!!!</p><br>
+    <p>You should pay: <span class="to-pay">${
       totalValue + split.value / participantArray.length
-    } eu</p>`;
+    } eu</span></p>`;
   tipPercent.value = "";
 });
