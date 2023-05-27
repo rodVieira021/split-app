@@ -26,7 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 1px;
+  margin-top: 15px;
 }
 
 .header h1 {
@@ -144,8 +144,14 @@ button:hover {
 /* MEDIAS */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    border-radius: 0 0 0 0;
+    margin-top: 0;
+  }
+
   .header h1 {
     font-size: 50px;
+    border-radius: 0 0 0 0;
   }
 
   .div-sec {
@@ -177,6 +183,11 @@ button:hover {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    border-radius: 0 0 0 0;
+    margin-top: 0;
+  }
+
   .header h1 {
     font-size: 60px;
   }
